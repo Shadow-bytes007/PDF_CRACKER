@@ -21,8 +21,8 @@ pip3 show tqdm >/dev/null 2>&1 || {
 }
 
 # Make script executable and copy as command
-chmod +x pdfcracker.py
-cp pdfcracker.py pdfcracker
+chmod +x pdf_cracker.py
+cp pdf_cracker.py pdfcracker
 chmod +x pdfcracker
 sudo mv pdfcracker /usr/local/bin/
 
