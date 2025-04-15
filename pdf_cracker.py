@@ -1,3 +1,5 @@
+#!/usr/bin/env python3  
+# It’s read by the OS when you run a script directly (like a command).
 import pikepdf
 import itertools
 import string
