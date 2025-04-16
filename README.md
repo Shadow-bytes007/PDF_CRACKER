@@ -38,14 +38,28 @@ chmod +x install_pdfcracker.sh
 
 ## 🚀 Usage
 
+## ⚠️ Notes
+
+### - You don't need to be in the same directory as the PDF to crack it — as long as you provide the correct path to the file.
+
+### - Performance Tip: Brute-force can be slow for large length/charset combinations. Use wisely.
+
+### - Thread Count: Default is 4. You can adjust with --max_workers.
 
 
-### NOW GO TO THE PDF's FOLDER WHICH YOU WANT TO CRACK
 
 ## ✅ FOR HELP / OPTIONS :
 ```bash
 pdfcracker -h
 ```
+## Available Options
+### Option | Description
+### > --wordlist | Path to your custom wordlist
+### > --generate | Enable brute-force mode with generated passwords
+### > --min_length | Minimum password length (brute-force mode)
+### > --max_length | Maximum password length (brute-force mode)
+### > --charset | Characters to include in brute-force attempts
+### > --max_workers | Number of threads to speed up cracking
 
 ### 1. Crack with a Wordlist
 ```bash
@@ -64,9 +78,7 @@ pdfcracker -g -mn 1 -mx 4 --charset abc123 yourfile.pdf
 
 
 
-## 🗂 Notes
 
-### Make sure the input PDF exists and is a valid PDF.
 
 ## ❌ Uninstallation
 ### To remove the tool from your system, run the uninstall script:
@@ -84,15 +96,18 @@ cd .. ; rm -r PDF_CRACKER && y
 ```
 
 ## 🧰 Requirements
-### Python 3.x
+### > Python 3.x
 
-### pikepdf
+### > pikepdf
 
-### tqdm
+### > tqdm
 
 ### If not already installed, the tool will install pikepdf and tqdm automatically via install_pdfcracker.sh
 
-##
+## ⚠️ Disclaimer
+### This tool is intended for educational and authorized testing purposes only. Do not use it on PDFs you do not own or have explicit permission to access.
+
+
 
 ## 🪪 License
 ### This project is licensed under the MIT License.
