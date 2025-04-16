@@ -54,7 +54,11 @@ pdfcracker --wordlist rockyou.txt  yourfile.pdf
 
 ### 2.Brute Force with Character Set
 ```bash
-pdfcracker --generate --min_length 1 --max_length 4 --charset abc123 yourfile.pdf
+pdfcracker -g -mn <minium length > -mx <max length > --charset <charactersets to generate > <yOur file.pdf >
+```
+### EXAMPLE
+```bash
+pdfcracker -g -mn 1 -mx 4 --charset abc123 yourfile.pdf
 ```
 
 
